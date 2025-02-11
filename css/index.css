@@ -13,6 +13,30 @@
 
     display: flex;
     justify-content: center;
-    background-color: rgb(55, 110, 230);
+    background-color: rgb(149, 178, 240);
 
+}
+
+.contNav{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(249, 253, 29, 0.541);
+    height: 40px;
+    
+}
+
+.elementoNav{
+
+    font-size: 18px;
+    color: rgb(5, 40, 116);
+
+}
+
+.elementoNav:hover{
+
+    font-size: 19px;
+    font-weight: bold;
+    color: rgb(3, 39, 116);
 }
