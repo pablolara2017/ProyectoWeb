@@ -1,42 +1,127 @@
-*{  /*restablecer margenes*/
+* {
     margin: 0;
-    padding: 0;
+    padding: 0;   /*restablecer margenes*/
     box-sizing: border-box;
 }
 
-#imLogo{  /*tamaño logo*/
-
+#imLogo {
     width: 100px;
-
-}
-#logo{  /*colocar imagen en medio*/
-
-    display: flex;
-    justify-content: center;
-    background-color: rgb(149, 178, 240);
-
 }
 
-.contNav{
+.contNav {
+    background-color: rgba(190, 199, 242, 0.822);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
 
+#listaNav {
+    list-style: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(249, 253, 29, 0.541);
-    height: 40px;
-    
 }
 
-.elementoNav{
-
-    font-size: 18px;
-    color: rgb(5, 40, 116);
-
+.elementoNav {
+    font-size: 20px;
+    color: rgb(4, 24, 67);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative; 
 }
 
-.elementoNav:hover{
+.elementoNav2 {
+    font-size: 20px;
+    color: rgb(4, 24, 67);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
-    font-size: 19px;
+.elementoNav:hover {
+
     font-weight: bold;
-    color: rgb(3, 39, 116);
+    color: rgb(3, 39, 116); 
+    cursor: pointer;
+}
+
+/* Estilo para el submenú */
+.subMenu {
+    display: none; /* Ocultamos el submenú por defecto */
+    position: absolute;
+    left: -60px;
+    list-style: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(243, 249, 255);
+    border-radius: 5px; 
+    width: 150px; /* Ancho ajustable */
+    border:1px solid gray;
+}
+
+/* Estilos para los elementos dentro del submenú */
+.subMenu li {
+    padding: 8px;
+    font-size: 18px;
+    color: rgb(4, 24, 67);
+}
+
+/* Hover sobre los elementos dentro del submenú */
+.subMenu li:hover {
+    background-color: rgb(184, 204, 248);
+    font-weight: bold;
+    color: rgb(3, 39, 116); 
+    cursor: pointer;
+}
+
+
+/*CUERPO*/
+
+#titulo1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+#titulo2{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+/*slider*/
+
+#slider{
+    display: flex;
+    justify-content: center;
+}
+
+#cont{
+    display: flex;
+    overflow: hidden;
+    width: 750px;
+    height: 450px;
+}
+
+#contImagenes{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    animation-name: sliderFotos;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#tam{
+    width: 750px;
+    height: 450px;
+    margin: 40px;
+}
+
+@keyframes sliderFotos{
+
+    from{
+        left: 0px;
+    }
+    to{
+        left: -554%;
+    }
+
 }
