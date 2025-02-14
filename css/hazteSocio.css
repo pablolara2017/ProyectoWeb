@@ -1,0 +1,72 @@
+form {
+    width: 100%;
+    max-width: 500px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="checkbox"], 
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+p {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button {
+    width: 48%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+button[type="submit"] {
+    background-color: #ffcc00;
+    color: black;
+}
+
+button[type="submit"]:hover {
+    background-color: #e6b800;
+}
+
+button[type="reset"] {
+    background-color: #d1d1d1;
+    color: black;
+}
+
+button[type="reset"]:hover {
+    background-color: #b0b0b0;
+}

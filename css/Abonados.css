@@ -70,8 +70,8 @@
 }
 
 #main{
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 150px;
+    margin-right: 150px;
     
 }
 
@@ -79,15 +79,16 @@
     margin-top: 30px;
 }
 
+#tamAbonate{
+    width: 1300px;
+}
+
 #fotoCamapaña{
     display: flex;
     justify-content: center;
+    margin: 50px;
 }
 
-#tamAbonate{
-    width: 1500px;
-    margin-top: 30px;
-}
 
 .cont{
     display: flex;
@@ -102,8 +103,43 @@
     border: 2px solid black;
     margin: 15px;
     padding: 15px;
-  
+    font-size: 20px;
+    line-height: 1.8;
+    border-radius: 30px;
 }
+
+#cont2{
+    margin-top: 30px;
+    line-height: 2;
+    font-size: 20px;
+    
+}
+
+#boton {
+    background-color: #ffcc00; /* Amarillo Alcorcón */
+    color: #000; /* Texto negro */
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#boton:hover {
+    background-color: #e6b800; /* Amarillo más oscuro */
+    transform: scale(1.05);
+}
+
 
 
 

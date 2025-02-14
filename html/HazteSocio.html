@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/hazteSocio.css">
+</head>
+<body>
+
+    <form action="procesar_formulario.php" method="post">
+        <!-- Nombre y Apellidos -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+    
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required>
+    
+        <!-- Selección de tipo de abono -->
+        <label for="tipo_abono">Selecciona tu tipo de abono:</label>
+        <select id="tipo_abono" name="tipo_abono">
+            <option value="nino">Niño (hasta 12 años)</option>
+            <option value="adulto">Adulto (13 - 64 años)</option>
+            <option value="mayor">Mayor (65+ años)</option>
+        </select>
+    
+        <!-- Área de texto -->
+        <label for="comentarios">Comentarios o sugerencias:</label>
+        <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribe aquí tus comentarios..."></textarea>
+    
+        <!-- Casillas de verificación (checkbox) -->
+        <p>Selecciona tus preferencias:</p>
+        <input type="checkbox" id="info" name="preferencias" value="info">
+        <label for="info">Recibir información del club</label>
+    
+        <input type="checkbox" id="promos" name="preferencias" value="promos">
+        <label for="promos">Recibir ofertas y promociones</label>
+    
+        <input type="checkbox" id="eventos" name="preferencias" value="eventos">
+        <label for="eventos">Participar en eventos exclusivos</label>
+    
+        <!-- Botones de selección (radio) -->
+        <p>¿Cómo prefieres que te contactemos?</p>
+        <input type="radio" id="email" name="contacto" value="email">
+        <label for="email">Correo electrónico</label>
+    
+        <input type="radio" id="telefono" name="contacto" value="telefono">
+        <label for="telefono">Teléfono</label>
+    
+        <input type="radio" id="whatsapp" name="contacto" value="whatsapp">
+        <label for="whatsapp">WhatsApp</label>
+    
+        <!-- Botones de envío y reset -->
+        <button type="submit">Enviar solicitud</button>
+        <button type="reset">Restablecer</button>
+    </form>
+    
+    
+</body>
+</html>
