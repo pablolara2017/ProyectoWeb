@@ -137,3 +137,66 @@
 
 
 
+
+@media screen and (min-width: 0px) and (max-width: 900px){
+
+    /*header*/
+        .contNav {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Opcional, para centrar los elementos */
+        }
+    
+        #listaNav {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            list-style: none; /* Elimina los estilos de lista */
+        }
+    
+        #listaNav li {
+            text-align: center; /* Opcional, para centrar los enlaces */
+        }
+        .subMenu {
+            display: none; /* Ocultamos el submenú por defecto */
+            position: absolute;
+            left: -200px;
+            list-style: none;
+            background-color: rgb(243, 249, 255);
+            border-radius: 5px; 
+            width: 150px; /* Ancho ajustable */
+            border:1px solid gray;
+            top: -30px;
+        }
+
+        #main{
+            margin-left: 40px;
+            margin-right: 40px;
+            
+        }
+        #t1{
+            text-align: center;
+        }
+        #cont1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 0;
+        }
+
+        #elemento1{
+
+            align-content: center;
+            margin: 5px;
+            padding: 0;
+
+        }
+        p{
+            margin: 0;
+            padding: 0;
+        }
+        
+
+}

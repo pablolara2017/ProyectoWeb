@@ -143,6 +143,9 @@ margin-left: 30px;
     display: flex;
     flex-direction:row;    
     margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #listaInstalaciones{
@@ -152,12 +155,19 @@ margin-left: 30px;
     margin-left: 20px;
 }
 
+.elemento3{
+    width: 50%;
+}
+
+#i3{
+    width: 1800px;
+    margin-left: 8px;
+}
+
 #tamEstadio3{
 
-    width: 800px;
-    height: auto;
-    margin-right: 20px;
-    margin-left: 30px;
+   width: 100%;
+   
 
 }
 
@@ -165,6 +175,7 @@ margin-left: 30px;
     display: flex;
     flex-direction: row;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #textoUbi{
@@ -234,5 +245,110 @@ margin-left: 30px;
 .eLista{
 
     margin: 30px;
+
+}
+
+#subir{
+    margin-left: 40PX;
+    
+}
+
+#flecha{
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    color: black;
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px){
+
+    /*header*/
+        .contNav {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Opcional, para centrar los elementos */
+        }
+    
+        #listaNav {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            list-style: none; /* Elimina los estilos de lista */
+        }
+    
+        #listaNav li {
+            text-align: center; /* Opcional, para centrar los enlaces */
+        }
+        .subMenu {
+            display: none; /* Ocultamos el submenú por defecto */
+            position: absolute;
+            left: -200px;
+            list-style: none;
+            background-color: rgb(243, 249, 255);
+            border-radius: 5px; 
+            width: 150px; /* Ancho ajustable */
+            border:1px solid gray;
+            top: -30px;
+        }
+
+        #main{
+
+            margin-left: 50px;
+            margin-right: 50px;
+        
+        }
+
+        
+        
+
+        #f1{
+            width: 100%;
+        }
+
+        #Cestadio2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #tamEstadio2{
+            width: 100%;
+        }
+
+        #textoCaract{
+
+            font-size: 20px;
+            margin-top: 5px;
+            margin-left: 30px;
+            
+        }
+
+        #Cinstalaciones{
+            display: flex;
+            flex-direction: column;
+        }
+
+        #i3{
+            display: none;
+        }
+
+        #tamEstadio2{
+            width: 100%;
+        }
+
+        #CestadioUbi{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        #p1{
+            font-size: 18px;
+        }
+        
+
 
 }
