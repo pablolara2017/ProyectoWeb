@@ -70,7 +70,59 @@
     cursor: pointer;
 }
 
+/*cuerpo*/
 
+#main{
+    
+    margin-left: 300px;
+    margin-right: 300px;
+        
+}
+#titulo1{
+    margin-top: 50px;
+}
+
+#titulo2{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.cont1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    
+}
+
+p{
+    font-size: 20px;
+    
+}
+
+#txt1{
+    margin-bottom: 40px;
+}
+
+.elem1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 15px;
+
+}
+
+.tam1{
+    width: 100%;
+    border-radius: 25px;
+    box-shadow:  5px 5px 18px gray;
+}
+
+#titulo3{
+    margin-top: 55px;
+    margin-bottom: 15px;
+}
 
 
 /*footer*/

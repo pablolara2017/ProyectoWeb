@@ -5,6 +5,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
 .elementoNav a {
     text-decoration: none; /* Elimina el subrayado */
     color: inherit; /* Mantiene el color del texto del <li> */

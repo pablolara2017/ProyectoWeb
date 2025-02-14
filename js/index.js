@@ -2,6 +2,8 @@
 
 document.addEventListener("DOMContentLoaded",function(){
 
+    window.alert("Este sitio web utiliza cookies, acepta para continuar con la navegacion")
+
     let clubNav=document.querySelector(".elementoNav");
 
     let subMenu = document.querySelector(".subMenu");

@@ -69,7 +69,12 @@
     cursor: pointer;
 }
 
+/*cuerpo*/
 
+#main{
+    margin-left: 200px;
+    margin-top: 200px;
+}
 
 
 
