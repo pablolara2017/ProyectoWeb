@@ -72,8 +72,39 @@
 /*cuerpo*/
 
 #main{
-    margin-left: 200px;
-    margin-top: 200px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+h2{
+    margin-top: 50px;
+}
+.elemento{
+    margin: 15px;
+    margin-bottom: 100px;
+    border: 2px solid rgb(158, 155, 155);
+    border-radius: 5px;
+    padding: 3%;
+    
+    
+}
+.tam{
+    width: 95%;
+}
+
+.num{
+    font-size: 40px;
+}
+.nombres{
+    font-size: 30px;
 }
 
 

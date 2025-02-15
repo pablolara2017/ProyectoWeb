@@ -5,12 +5,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#main{
 
-    margin-left: 150px;
-    margin-right: 150px;
-
-}
 
 .elementoNav a {
     text-decoration: none; /* Elimina el subrayado */
@@ -77,6 +72,12 @@
 }
 
 /*cuerpo*/
+#main{
+
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
 
 #tituloEstadio{
 

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/formCat.css">
+</head>
+<body>
+    <div class="form-container">
+        
+        <form action="../php/formCat.php" method="POST">
+            <p>Nombre del Jugador:</p>
+            <input type="text" id="nombre" name="nombre" required>
+    
+            <p>Categoría</p>
+            <select id="categoria" name="categoria" required onchange="actualizarCategoria()">
+                <option value="">Selecciona una categoría</option>
+                <option value="prebenjamin">Prebenjamín (5-7 años)</option>
+                <option value="benjamin">Benjamín (8-9 años)</option>
+                <option value="alevin">Alevín (10-11 años)</option>
+                <option value="infantil">Infantil (12-13 años)</option>
+                <option value="cadete">Cadete (14-15 años)</option>
+                <option value="juvenil">Juvenil (16-18 años)</option>
+            </select>
+    
+            <p>Edad (automáticamente determinada por la categoría):</p>
+            <input type="text" id="edad" name="edad" readonly>
+    
+            <p>Teléfono de contacto:</p>
+            <input type="tel" id="telefono" name="telefono" required>
+    
+            <p>Mensaje adicional (opcional):</p>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea> <br>
+    
+            <button type="submit">Enviar inscripción</button>
+
+            <script>
+                function actualizarCategoria() {
+                    const categoria = document.getElementById('categoria').value;
+                    const edadField = document.getElementById('edad');
+                    
+                    let edad = '';
+                    switch(categoria) {
+                        case 'prebenjamin':
+                            edad = '5-7 años';
+                            break;
+                        case 'benjamin':
+                            edad = '8-9 años';
+                            break;
+                        case 'alevin':
+                            edad = '10-11 años';
+                            break;
+                        case 'infantil':
+                            edad = '12-13 años';
+                            break;
+                        case 'cadete':
+                            edad = '14-15 años';
+                            break;
+                        case 'juvenil':
+                            edad = '16-18 años';
+                            break;
+                    }
+                    edadField.value = edad;
+                }
+            </script>
+</body>
+</html>
