@@ -219,4 +219,11 @@ a{
             top: -30px;
         }
 
+        .main{
+            margin-left: 20px;
+            margin-right: 20px;
+            line-height: 1.4;
+            
+        }
+
 }
