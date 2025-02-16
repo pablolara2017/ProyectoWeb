@@ -69,7 +69,44 @@
     cursor: pointer;
 }
 
+/*cuerpo*/
 
+.main{
+    margin-left: 300px;
+    margin-right: 300px;
+}
+#h1{
+    margin-top: 35px;
+}
+
+.h2{
+    margin-top: 35px;
+}
+
+#tamLogo{
+    width: 200px;
+    margin-top: 35px;
+}
+
+#tamPlano{
+    width: 600px;
+    margin-top: 35px;
+}
+
+.texto{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+#tamEstadio{
+    width: 600px;
+    margin-top: 30px;
+}
+
+#tamUbi{
+    width: 600px;
+    margin-top: 30px;
+}
 
 
 /*footer*/
@@ -101,5 +138,56 @@
 .eLista{
 
     margin: 30px;
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 800px){
+
+    /*header*/
+        .contNav {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Opcional, para centrar los elementos */
+        }
+    
+        #listaNav {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            list-style: none; /* Elimina los estilos de lista */
+        }
+    
+        #listaNav li {
+            text-align: center; /* Opcional, para centrar los enlaces */
+        }
+        .subMenu {
+            display: none; /* Ocultamos el submenú por defecto */
+            position: absolute;
+            left: -200px;
+            list-style: none;
+            background-color: rgb(243, 249, 255);
+            border-radius: 5px; 
+            width: 150px; /* Ancho ajustable */
+            border:1px solid gray;
+            top: -30px;
+        }
+
+        .main{
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        #tamPlano{
+            width: 400px;
+        }
+
+        #tamEstadio{
+            width: 400px;
+        }
+        #tamUbi{
+            width: 400px;
+        }
+        
+
 
 }
