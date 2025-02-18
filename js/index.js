@@ -2,7 +2,6 @@
 
 document.addEventListener("DOMContentLoaded",function(){
 
-    window.alert("Este sitio web utiliza cookies, acepta para continuar con la navegacion")
 
     let clubNav=document.querySelector(".elementoNav");
 
@@ -29,7 +28,15 @@ document.addEventListener("DOMContentLoaded",function(){
         }
     });
 
+    document.getElementById("boton").addEventListener("click",function(){
 
+        let cookie=document.getElementById('cookie');
+
+        let boton=document.getElementById('boton');
+
+        cookie.style.display='none';
+        
+    })
 
 
 
